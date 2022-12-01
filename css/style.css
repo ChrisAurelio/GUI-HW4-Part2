@@ -1,0 +1,114 @@
+/*
+GitHub: ChrisAurelio
+Name: Chris Aurelio
+Email: christopher_aurelio@student.uml.edu
+*/
+
+/* Height of the page */
+html {
+    height: 100%;
+}
+
+/* Styles for the entire page */
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+    padding: 0% 10% 0% 10%;
+    min-height: 100%;
+    min-width: 600px;
+}
+
+/* Styles for the fieldset that houses the input forms */
+fieldset {
+    min-width: 470px;
+    width: 30%;
+    float: left;
+    padding: 20px 20px 20px 20px;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+/* Styles for the error paragraph */
+p {
+    font-weight: bold;
+    color: rgb(190, 10, 10);
+    margin-top: 30px;
+}
+
+/* Styles for the title of the page */
+h1 {
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Styles for the colored bar on the page */
+hr.rounded {
+    border-top: 10px solid rgb(85, 10, 190);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Styles for the input fields */
+input {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+/* Styles for the "Generate Table" button */
+button {
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Styles for the button on hover */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Styles for the table */
+#table {
+    min-width: 5px;
+    max-height: 550px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+/* Needed the add the left float because the tabs had a bug without it */
+#myTabs {
+    float: left;
+}
+
+table {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: table
+}
+
+th, td {
+    text-align: center;
+    min-width: 40px;
+    min-height: 20px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+/* Styles for error message */
+.message {
+    color: red;
+    font-size: medium;
+    margin-top: 5px;
+    padding-left: 10px;
+}

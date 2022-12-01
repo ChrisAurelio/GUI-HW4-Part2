@@ -1,0 +1,66 @@
+<!-- 
+GitHub: ChrisAurelio
+Name: Chris Aurelio
+Email: christopher_aurelio@student.uml.edu
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Adds title to the webpage -->
+  <title>Multiplication Table</title>
+  <!-- Linking CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css' />
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.min.css' />
+</head>
+<body>
+  <!-- Page Header -->
+  <h1>Dynamic Multiplication Table</h1>
+  <!-- Colored display bar -->
+  <hr class="rounded">
+  <fieldset>
+    <!-- Form items for inputs -->
+    <form id="inputForm" method="get">
+      <div class="box">
+        <div id="minRowBox">
+          <label for="minColumn">Minimum Row Value</label><br>
+          <input type="number" id="minColumn" name="minColumn" value="0"><br><br>
+          <div id="minColumnSlider"></div><br>
+        </div>
+
+        <div id="maxRowBox">
+          <label for="maxColumn">Maximum Row Value</label><br>
+          <input type="number" id="maxColumn" name="maxColumn" value="0"><br><br>
+          <div id="maxColumnSlider"></div><br>
+        </div>
+        
+        <div id="minColumnBox">
+          <label for="minRow">Minimum Column Value</label><br>
+          <input type="number" id="minRow" name="minRow" value="0"><br><br>
+          <div id="minRowSlider"></div><br>
+        </div>
+
+        <div id="maxColumnBox"></div>
+          <label for="maxRow">Maximum Column Value</label><br>
+          <input type="number" id="maxRow" name="maxRow" value="0"><br><br>
+          <div id="maxRowSlider"></div><br>
+        </div>
+      </div>
+    </form>
+    <!-- Button that calls the generateTable function on click -->
+    <button id="generateButton">Add Table</button>
+    <button id="deleteButton">Delete Table</button>
+  </fieldset>
+  <div id="table"></div>
+  <!-- Declaring table elements -->
+  <div id="myTabs">
+    <ul id="tab"></ul>
+  </div>
+  <!-- Linking JavaScript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  <script src="js/function.js"></script>
+</body>
+</html>
